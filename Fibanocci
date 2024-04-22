@@ -1,0 +1,14 @@
+a=0
+b=1
+s=0
+n=int(input('Enter the number:'))
+for i in range(0,n):
+    if(n==0):
+        print(a)
+    elif(n==1):
+        print(b)
+    else:
+        print(s)
+        s=a+b
+        b=a
+        a=s
