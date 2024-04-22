@@ -1,0 +1,12 @@
+n=int(input("Enter tne number:"))
+s=0
+temp=n
+while temp>0:
+    digit=temp % 10
+    temp //=10
+    s += digit ** 3
+    
+if n==s:
+    print(n,"is Amstrong")
+else:
+    print(n,"is not Amstrong") 
