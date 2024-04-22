@@ -1,0 +1,9 @@
+vidya=(10,20,30,40,50)
+shree=(60,70,80,90,100)
+s=vidya+shree
+print(s)
+print(type(s))
+
+print(max(s))
+print(min(s))
+print(len(s))
