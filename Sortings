@@ -1,0 +1,52 @@
+#Bubble sort
+"""l=list(map(int,input().split(' ')))
+for i in range(len(l)):
+    a=0
+    for j in range(len(l)-i-1):
+        if l[j+1]<l[j]:
+            l[j],l[j+1]=l[j+1],l[j]
+            a=1
+    if a==0:
+        break
+print(l)"""
+
+#Insertion sort
+"""l=list(map(int,input().split(' ')))
+for i in range(1,len(l)):
+    temp=l[i]
+    j=i-1
+    while j>=0:
+        if l[j]<temp:
+            l[j+1]=l[j]
+        else:
+            break
+        j-=1
+    l[j+1]=temp
+print(l)"""
+
+'''n=int(input())
+l=[]
+for i in range(n):
+    l.append(list(map(int,input().split(' '))))
+for i in range(len(l)):
+    a=0
+    for j in range(len(l)-i-1):
+        if sum(l[j])>sum(l[j+1]):
+            l[j],l[j+1]=l[j+1],l[j]
+            a=1
+    if a==0:
+        break
+print(l)'''
+
+#Selection sort
+
+l=list(map(int,input().split(' ')))
+for i in range(len(l)):
+    min=l[i]
+    mini=i
+    for j in range(i,len(l)):
+        if l[j]<min:
+            min=l[j]
+            mini=j
+    l[i],l[mini]=l[mini],l[i]
+print(l)
